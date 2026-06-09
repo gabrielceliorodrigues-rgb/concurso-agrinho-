@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1>🌱 Agro Forte</h1>
+
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#producao">Produção</a></li>
+                <li><a href="#timeline">Linha do Tempo</a></li>
+                <li><a href="#calculadora">Calculadora</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#creditos">Créditos</a></li>
+            </ul>
+
+            <button id="darkModeBtn">🌙 Modo Escuro</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2>Agro Forte, Futuro Sustentável</h2>
+
+                <p>
+                    A agricultura sustentável permite produzir alimentos,
+                    gerar renda e preservar os recursos naturais para as
+                    futuras gerações.
+                </p>
+
+                <button id="mensagemBtn">
+                    Descobrir Benefício Sustentável
+                </button>
+
+                <p id="mensagem"></p>
+            </div>
+        </section>
+
+        <section id="producao" class="cards-section">
+            <h2>Práticas Sustentáveis</h2>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>🌾 Rotação de Culturas</h3>
+                    <p>
+                        Melhora a fertilidade do solo e reduz pragas.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>💧 Irrigação Inteligente</h3>
+                    <p>
+                        Economiza água e aumenta a eficiência.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>🌳 Agroflorestas</h3>
+                    <p>
+                        Integra árvores e cultivos agrícolas.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>🚜 Agricultura de Precisão</h3>
+                    <p>
+                        Utiliza tecnologia para reduzir desperdícios.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="timeline" class="timeline-section">
+
+            <h2>Linha do Tempo da Sustentabilidade no Campo</h2>
+
+            <div class="timeline">
+
+                <div class="evento">
+                    <span>1950</span>
+                    <p>Mecanização agrícola intensificada.</p>
+                </div>
+
+                <div class="evento">
+                    <span>1980</span>
+                    <p>Debates globais sobre preservação ambiental.</p>
+                </div>
+
+                <div class="evento">
+                    <span>2000</span>
+                    <p>Expansão da agricultura de precisão.</p>
+                </div>
+
+                <div class="evento">
+                    <span>2026</span>
+                    <p>Produção sustentável como prioridade mundial.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="calculadora" class="calculadora">
+
+            <h2>Calculadora de Impacto Ambiental</h2>
+
+            <label for="arvores">
+                Quantidade de árvores plantadas:
+            </label>
+
+            <input type="number" id="arvores" min="0">
+
+            <button id="calcularBtn">
+                Calcular Benefício
+            </button>
+
+            <p id="resultadoCalc"></p>
+
+        </section>
+
+        <section id="quiz" class="quiz">
+
+            <h2>Quiz Sustentável</h2>
+
+            <div class="pergunta">
+
+                <p>
+                    Qual prática ajuda a preservar o solo?
+                </p>
+
+                <button class="resposta" data-correta="true">
+                    Rotação de culturas
+                </button>
+
+                <button class="resposta">
+                    Queimadas frequentes
+                </button>
+
+                <button class="resposta">
+                    Desmatamento
+                </button>
+
+            </div>
+
+            <p id="resultadoQuiz"></p>
+
+        </section>
+
+        <section id="galeria" class="galeria">
+
+            <h2>Galeria Sustentável</h2>
+
+            <div class="grid-galeria">
+
+                <img src="assets/img/agro1.jpg"
+                     alt="Agricultura sustentável">
+
+                <img src="assets/img/agro2.jpg"
+                     alt="Plantação sustentável">
+
+                <img src="assets/img/agro3.jpg"
+                     alt="Tecnologia agrícola">
+
+                <img src="assets/img/agro4.jpg"
+                     alt="Preservação ambiental">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="creditos">
+
+        <h2>Créditos</h2>
+
+        <p>
+            Projeto desenvolvido por:
+            <strong>Gabriel Célio Rodrigues</strong>
+        </p>
+
+        <p>
+            Tema Agrinho 2026:
+            Agro Forte, Futuro Sustentável:
+            equilíbrio entre produção e meio ambiente.
+        </p>
+
+        <p>
+            Caso sejam utilizadas imagens externas,
+            as fontes devem ser citadas no README.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
