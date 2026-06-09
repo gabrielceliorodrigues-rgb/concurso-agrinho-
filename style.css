@@ -1,360 +1,150 @@
-/* =========================
-RESET
-========================= */
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-body{
-font-family:Arial, Helvetica, sans-serif;
-background:#f5f7f1;
-color:#333;
-line-height:1.6;
-transition:0.4s;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7f1;
+    color: #333;
+    line-height: 1.6;
+    transition: 0.4s;
 }
 
-/* =========================
-NAVBAR
-========================= */
-
-.navbar{
-background:#2e7d32;
-color:white;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 30px;
-flex-wrap:wrap;
-position:sticky;
-top:0;
-z-index:1000;
+/* NAVBAR */
+.navbar {
+    background: #2e7d32;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap;
 }
 
-.navbar h1{
-font-size:1.8rem;
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
 }
 
-.menu{
-display:flex;
-list-style:none;
-gap:20px;
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.menu a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-transition:0.3s;
+/* HERO */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('assets/img/agro1.jpg');
+    background-size: cover;
+    color: white;
 }
 
-.menu a:hover
-
-/* =========================
-BOTÕES
-========================= */
-
-button{
-cursor:pointer;
-border:none;
-border-radius:8px;
-padding:12px 20px;
-background:#43a047;
-color:white;
-font-weight:bold;
-transition:0.3s;
+/* SEÇÕES */
+section {
+    padding: 60px 20px;
 }
 
-button:hover{
-background:#1b5e20;
-transform:scale(1.05);
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-/* =========================
-HERO
-========================= */
-
-.hero{
-min-height:90vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:40px;
-background:linear-gradient(
-rgba(0,0,0,0.4),
-rgba(0,0,0,0.4)
-),
-url('assets/img/agro1.jpg');
-
-```
-background-size:cover;
-background-position:center;
-```
-
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.hero-content{
-max-width:800px;
-color:white;
+/* BOTÕES */
+button {
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #43a047;
+    color: white;
 }
 
-.hero h2{
-font-size:3rem;
-margin-bottom:20px;
+button:hover {
+    background: #1b5e20;
 }
 
-.hero p{
-font-size:1.2rem;
-margin-bottom:25px;
+/* GALERIA */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
 }
 
-/* =========================
-SEÇÕES
-========================= */
-
-section{
-padding:70px 20px;
+.grid-galeria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-section h2{
-text-align:center;
-margin-bottom:40px;
-color:#2e7d32;
-font-size:2rem;
+/* QUIZ */
+.pergunta {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-/* =========================
-CARDS
-========================= */
-
-.cards{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
+/* TIMELINE */
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
 }
 
-.card{
-width:250px;
-background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-transition:0.4s;
+.evento {
+    background: #e8f5e9;
+    padding: 15px;
+    border-radius: 10px;
 }
 
-.card:hover{
-transform:translateY(-10px);
-}
-
-.card h3{
-margin-bottom:10px;
-color:#2e7d32;
-}
-
-/* =========================
-TIMELINE
-========================= */
-
-.timeline{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.evento{
-background:#e8f5e9;
-padding:20px;
-border-radius:10px;
-width:220px;
-text-align:center;
-}
-
-.evento span{
-display:block;
-font-size:1.5rem;
-font-weight:bold;
-color:#1b5e20;
-margin-bottom:10px;
-}
-
-/* =========================
-CALCULADORA
-========================= */
-
-.calculadora{
-text-align:center;
-}
-
-.calculadora input{
-width:200px;
-padding:10px;
-margin:15px;
-border:2px solid #2e7d32;
-border-radius:8px;
-}
-
-/* =========================
-QUIZ
-========================= */
-
-.quiz{
-text-align:center;
-}
-
-.pergunta{
-background:white;
-max-width:600px;
-margin:auto;
-padding:30px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.pergunta p{
-font-size:1.2rem;
-margin-bottom:20px;
-}
-
-.resposta{
-display:block;
-width:100%;
-margin:10px auto;
-}
-
-/* =========================
-GALERIA
-========================= */
-
-.grid-galeria{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.grid-galeria img{
-width:100%;
-height:250px;
-object-fit:cover;
-border-radius:15px;
-transition:0.4s;
-}
-
-.grid-galeria img:hover{
-transform:scale(1.05);
-}
-
-/* =========================
-FOOTER
-========================= */
-
-footer{
-background:#1b5e20;
-color:white;
-text-align:center;
-padding:40px;
-}
-
-footer p{
-margin:10px 0;
-}
-
-/* =========================
-MODO ESCURO
-========================= */
-
-.dark-mode{
-background:#121212;
-color:#ffffff;
-}
-
-.dark-mode section{
-background:#121212;
+/* MODO ESCURO */
+.dark-mode {
+    background: #121212;
+    color: white;
 }
 
 .dark-mode .card,
 .dark-mode .pergunta,
-.dark-mode .evento{
-background:#222;
-color:white;
+.dark-mode .evento {
+    background: #222;
+    color: white;
 }
 
-.dark-mode h2{
-color:#81c784;
-}
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-.dark-mode input{
-background:#333;
-color:white;
-}
-
-/* =========================
-RESPONSIVIDADE
-========================= */
-
-@media(max-width:900px){
-
-```
-.navbar{
-    flex-direction:column;
-    gap:15px;
-}
-
-.menu{
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-.hero h2{
-    font-size:2.2rem;
-}
-```
-
-}
-
-@media(max-width:768px){
-
-```
-.hero{
-    padding:20px;
-}
-
-.hero h2{
-    font-size:1.8rem;
-}
-
-.hero p{
-    font-size:1rem;
-}
-
-.card{
-    width:100%;
-    max-width:350px;
-}
-```
-
-}
-
-@media(max-width:480px){
-
-```
-.navbar h1{
-    font-size:1.4rem;
-}
-
-.menu{
-    gap:10px;
-}
-
-button{
-    width:100%;
-    margin-top:10px;
-}
-```
-
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
 }
